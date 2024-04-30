@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,703;1,703&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+ }
+ 
+ body{
+    overflow-x: hidden;
+ }
+
+#video_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;  
+    z-index: -1000;  
+    overflow: hidden;
+    }
+
+    #video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    }
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+
+/* Menu */
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+}
+ 
+header .logo:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    border-radius: 30px;
+    transition: 0.3s;
+}
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+header .navbar a:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* SECCION INICIO */
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#texto{
+    font-size: 1.5em;
+    margin-bottom: -10px;
+}
+
+#texto2{
+    font-size: 4.5em;
+    margin-top: -15px; 
+
+}
+
+.contenido .holamundo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #8A2BE2, #004a82);
+    padding: 10px 20px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: inline-block;
+    box-shadow: 0 0 0px rgba(0,0,0,0);
+}
+
+
+ .contenido .holamundo a:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+ .contenido .imagen{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -20px;
+    z-index: -5;
+ }
+
+ .contenido .imagen img{
+    height: 50vh;
+    margin-right: 100px;
+ }
+
+
+ .contenido .imagen img:hover {
+    height: 80vh;
+ }
+
+
+ .copyright {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ 
+ 
+
+ .copyright p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 100px;
+ }
+
+.redessociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+
+}
+
+.redessociales li {
+    padding: 10px;
+}
+
+.redessociales li a {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redessociales li a:hover {
+    color: rgb(107, 47, 139);
+    transform: scale(1.1);
+    transform: 0.3s;
+}
+
+
+/* SECCION QUIENSOY */
+
+.info-seccion {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+}
+
+.contenido{
+    margin-top: 50px;
+}
+
+.contenido .holamundo{
+    position: relative;
+    min-width: 600px;
+    text-align: center;
+}
+.contenido .holamundo h2 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+}
+
+
+.contenido .holamundo p{
+   font-size: 0.8em;
+   line-height: 1.5;
+   color: rgb(255, 255, 255);
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+
+.contenido3 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.box h2, .box p {
+    min-width: 200px;  
+    white-space: nowrap; 
+}
+
+.box img {
+    width: 90%; 
+    max-width: 90px; 
+}
+
+.section h2, .section p {
+    width: 100%; 
+}
+
+.box h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+}
+
+.box p {
+    font-size: 0.7em;
+    color: white;
+    word-spacing: 10px; 
+}
+
+
+
+/* SECCION CONTACTO*/
+
+.texto3 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+}
+
+
+fieldset {
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background: transparent;
+    border-radius: 10px;
+    padding:30px 40px ;
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    backdrop-filter: blur(30px)  
+}
+
+fieldset p{
+    color: white;
+}
+textarea {
+    width: 500px;
+    height: 300px;
+    margin-bottom: -30px;
+}
+
+#botones {
+    font-size: 18px;
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    width: 100px;
+    height:50px;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+#telefono{
+    width: 120px;;
+}
+#nombre{
+    width: 100px;
+}
+#correo{
+ width: 300px;
+}
+
+.redessociales2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+    margin-right: 500px;
+    margin-bottom: -50px;
+}
+
+.redessociales2 li {
+    padding: 10px;
+}
+
+.redessociales2 li a {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redessociales2 li a:hover {
+    color: rgb(107, 47, 139);
+    transform: scale(1.1);
+    transform: 0.3s;
+}
+
+
+/* SECCIÓN PROYECTOS*/
+
+.navbarproyecto {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+.navbarproyecto > li{
+    list-style: none;
+    float: left;
+}
+.navbarproyecto ul{
+    list-style: none;
+}
+.navbarproyecto li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbarproyecto li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.navbarproyecto li:hover > ul {
+    display: block;
+}
+
+.navbarproyecto li:hover a {
+    background-image: linear-gradient(to right, #8A2BE2, #004a82);
+    border-radius: 100px; 
+    color: rgb(255, 255, 255); 
+    transition: 0.3s;
+}
+
+
+.texto4 {
+    margin-top: 50px;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #8A2BE2, #004a82);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block; 
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.texto5{
+    font-size: 1.0em;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.imgx{
+    width: 100px;
+    height: 200px;
+}
+
+ul.galeria li{
+    position: relative;
+    float:left;
+    margin:80px 10px;
+    color: white;
+    list-style: none;
+}
+
+ul.galeria li a{
+   text-decoration: none;
+}
+
+
+ul.galeria li a img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen horizontalmente dentro de su enlace */
+}
+
+ul.galeria li a:hover img{
+    transform: scale(1.5);
+}
+
+ul.galeria li a span {
+    display: block; /* Asegura que el texto esté debajo de la imagen */
+    text-align: center; /* Centra el texto debajo de la imagen */
+    color: #FFF; /* Ajusta el color del texto si es necesario */
+    margin-top: 50px; /* Espacio entre la imagen y el texto */
+    text-decoration: none;
+}
+
+
+
+
+/* SECCION CURRICULUM */
+
+.curriculum{
+   
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #8A2BE2, #004a82 );
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(1, 1, 1), #000000ba );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(241, 241, 241), #0d7fd6 );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #ffffff;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #ffffff;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #ffffff;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #ffffff;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+/* Estilos para pantallas hasta 576px */
+@media (max-width: 576px) {
+
+    *{
+        
+    }
+
+    #video_background {
+        position: fixed;
+        top: 50%;  /* Centrado vertical */
+        left: 50%;  /* Centrado horizontal */
+        width: auto;  /* Mantiene la proporción original del video */
+        min-width: 100%;  /* Asegura una cobertura mínima completa en el ancho */
+        height: auto;  /* Mantiene la proporción original del video */
+        min-height: 100%;  /* Asegura una cobertura mínima completa en la altura */
+        transform: translate(-50%, -50%);  /* Ajusta el video exactamente al centro del viewport */
+        object-fit: cover;  /* Cubre el área sin deformar el video */
+        z-index: -200;  /* Asegura que el video siempre esté detrás de todos los elementos */
+    }
+    
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .navbar li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    header .navbar a {
+        font-size: 1.5em;
+        padding: 8px 12px;
+
+    }
+
+    .contenido {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .contenido .holamundo {
+        text-align: center;
+    }
+
+    .contenido .imagen img {
+        margin-top: 50px;
+        width:50%;  
+        height:50%;
+    }
+
+
+    .contenido .holamundo h2 {
+        font-size: 2.5em;  
+    }
+    
+#texto{
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+#texto2{
+    font-size: 2.5em;
+}
+
+.contenido .holamundo p{
+  font-size: 0.7em;
+}
+
+.copyright {
+    font-size: 0.5em; /* Establece el tamaño de la fuente más pequeño */
+    order: -2; /* Coloca este elemento por encima si se usa flexbox en el contenedor padre */
+    width: 100%; /* Asegura que ocupa todo el ancho disponible */
+    margin-bottom: -10px; /* Agrega algo de espacio debajo */
+    white-space: nowrap;  /* Impide que el texto se envuelva en múltiples líneas */
+    margin-right: 340px;
+}
+
+
+.redessociales li a {
+    transform: scale(1.2); /* Reduce el tamaño en un 10% */
+    display: inline-block; /* Asegura que transform se aplique correctamente */
+}
+
+}
